@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="http:////at.alicdn.com/t/font_1094397_fpfxmdmluus.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css"/>
+</head>
+<body>
+<!--header-->
+
+    <header>
+        <div class="header_top">
+            <div class="header_box">
+                <div class="header_left">
+                    <a href="#">
+                        <img src="img/logo.gif">
+                    </a>
+                </div>
+                <p>如未注册，&nbsp;点此<a href="#">注册</a></p>
+            </div>
+        </div>
+    </header>
+
+
+<!--登录部分-->
+
+<!--register-->
+
+    <div class="register">
+        <div class="register_center">
+            <div class="register_box">
+                <ul class="register_uls">
+                    <li id="btn_1">
+                        <i class="iconfont icon-character"></i>
+                        会员登录
+                    </li>
+                    <li id="btn_2">
+                        <i class="iconfont icon-phone"></i>
+                        手机动态密码登录
+                    </li>
+                </ul>
+                <div id="vip" class="register_form">
+                    <form action="">
+                        <input id="vipCard" class="input_fuy" type="text/css" placeholder="用户名、手机、邮箱">
+                        <a id="vipCardId" class="form_a1" href="#">进入会员卡登录</a><br/>
+                        <input id="vipPass" class="input_fuy input_two" type="password" placeholder="密码"><br/>
+                        <input class="check_input input_three" type="checkbox">&nbsp;请保存我这次的登录信息
+                        <a class="form_a2" href="#">短信找回密码?</a><br/>
+                        <input id="user_dl" class="input_fuy input_fore" type="submit" value="登 录">
+                    </form>
+                </div>
+                <div id="phone" class="phone">
+                    功能尚未开放，请选择用用户名和密码登录！
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#btn_2').bind('click', function() {
+            $('#vip').css({ "display":"none"});
+            $('#phone').css({ "display":"block"});
+            $('#btn_1').css({"border-bottom":"1px solid #eee","color":"#8a8a8a"});
+            $('#btn_2').css({"color":"#e93b78","border-bottom":"1px solid #e93b78"});
+        });
+        $('#btn_1').bind('click', function() {
+            $('#vip').css({ "display":"block"});
+            $('#phone').css({ "display":"none"});
+            $('#btn_2').css({"border-bottom":"1px solid #eee","color":"#8a8a8a"});
+            $('#btn_1').css({"color":"#e93b78","border-bottom":"1px solid #e93b78"});
+        });
+        $("#vipCardId").bind('click',function(){
+            $("#btn_1").html("<i class=\"iconfont icon-character\"></i>会员卡用户登录");
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
