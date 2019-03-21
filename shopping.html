@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>商品详情页面</title>
+<link rel="stylesheet" href="http://at.alicdn.com/t/font_1094397_vfu7zn4yqr.css">
 <link rel="stylesheet" type="text/css" href="css/shopping.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-
+    <div id="goback_top"></div>
 <!--header-->
 
 <header>
@@ -349,9 +351,60 @@
                         <span>90.0</span>
                     </div>
                     <div class="money_right">
-                        <a href="#">高级会员购买享有折扣</a>
-                        <a href="#">已售出 2458 件</a>
+                        <a class="money_right_a1" href="#">
+                            高级会员购买享有折扣
+                            <ul class="money_uls">
+                                <li>会员价格</li>
+                                <li class="money_lis_fy">
+                                    <span>会员等级</span>
+                                    <span>会员价格</span>
+                                </li>
+                                <li class="money_lis_fy"    >
+                                    <span>QQ等级</span>
+                                    <span>￥75.0</span>
+                                </li>
+                            </ul>
+                        </a><br/>
+                        <a class="money_right_a2" href="#">已售出 2458 件</a>
                         <a href="#">0 人评价</a>
+                    </div>
+                    <div class="shopping_buy">
+                        <ul class="shopping_buy_top">
+                            <li>可使用<span> 0 </span>积分</li>
+                            <li>品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌&nbsp;&nbsp;<a href="#">进入<span> 3ce </span>品牌馆</a></li>
+                            <li>优惠券<a href="#">满128减10</a></li>
+                        </ul>
+                        <ul class="shopping_buy_colors">
+                            <li>颜色分类</li>
+                            <li id="shopping_black">黑色</li>
+                            <li id="shopping_brown">棕色</li>
+                        </ul>
+                        <ul class="shopping_buy_number">
+                            <li>数&nbsp;&nbsp;&nbsp;&nbsp;量</li>
+                            <li>
+                                <input id="shopping_num" type="text" value="1">
+                            </li>
+                            <li class="buy_plus">
+                                <button id="addBtn">+</button>
+                                <button id="radiusBtn">-</button>
+                            </li>
+                        </ul>
+                        <ul class="buy_addCar">
+                            <a href="#"><li>立即购买</li></a>
+                            <li>加入购物车</li>
+                            <li id="shopping_collect" class="shopping_collect"><i class="iconfont icon-xingxing"></i>收藏</li>
+                            <li class="shopping_wx">
+                                <i class="iconfont icon-web-icon-">
+
+                                </i>
+                                去手机购买
+                                <ul>
+
+                                        <img src="img/erweima_png.png"/>
+
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -359,6 +412,314 @@
     </div>
 </div>
 
+<!--show-->
+
+<div class="show">
+    <div class="shopping_show">
+        <div class="show_box">
+            <div class="show_left">
+                <ul id="shopping_one1" class="show_left_uls">
+                    <li><a href="#shopping_one1">产品介绍</a></li>
+                    <li><a href="#shopping_one2">规格参数</a></li>
+                    <li><a href="#shopping_one3">商品实拍</a></li>
+                    <li>
+                        <a href="#shopping_one4">
+                            评价(
+                            <span>0</span>
+                            )
+                        </a>
+                    </li>
+                </ul>
+                <div class="show_img">
+                    <img src="img/show_img_1.jpg"/>
+                    <img src="img/show_img_2.jpg"/>
+                </div>
+                <div id="shopping_one2" class="show_parameter">
+                    <h7>规格参数</h7>
+                    <table class="show_table" cellpadding="0" cellspacing="">
+                        <tr>
+                            <td width="148px">产品名称</td>
+                            <td width="315px">韩国3ce三熹玉眼线液LIQUID EYE LINER</td>
+                            <td width="148px">货号</td>
+                            <td width="314px">ECS000050</td>
+                        </tr>
+                        <tr>
+                            <td>上市时间</td>
+                            <td>2016</td>
+                            <td>月份</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>是否为特殊用途化妆品</td>
+                            <td>否</td>
+                            <td>保质期</td>
+                            <td>12个月</td>
+                        </tr>
+                        <tr>
+                            <td>适合肤质</td>
+                            <td>任何肤质</td>
+                            <td>规格类型</td>
+                            <td>支</td>
+                        </tr>
+                        <tr>
+                            <td>产地</td>
+                            <td>韩国</td>
+                            <td>净含量</td>
+                            <td>6.5g</td>
+                        </tr>
+                        <tr>
+                            <td>化妆品品类</td>
+                            <td>眼妆</td>
+                            <td>品名</td>
+                            <td>眼线液</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="shopping_one3" class="show_parameter shopping_phone">
+                    <h7>商品实拍</h7>
+                </div>
+                <div id="shopping_one4" class="show_parameter">
+                    <h7>商品评价</h7>
+                    <div class="shopping_evaluate">
+                        <ul class="shopping_uls_top">
+                            <li>
+                                <span>0%</span>
+                                <p>好评度</p>
+                            </li>
+                            <li class="shopping_uls_lis_two">
+                                <dl>
+                                    <dt>好评<span>(0%)</span></dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>中评<span>(0%)</span></dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>差评<span>(0%)</span></dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul class="shopping_uls_two">
+                            <li>
+                                <a href="#">
+                                    全部评价
+                                    <span>(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    好评
+                                    <span>(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    中评
+                                    <span>(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    差评
+                                    <span>(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    用户晒单
+                                    <span>(0)</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="shopping_txt">
+                            暂时还没有任何评论！
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="show_right">
+                <p>精品推荐</p>
+                <div class="show_boutique">
+                    <img src="img/best_1.jpg"/>
+                    <a href="#">韩国3ce三熹玉三色眼影黑壳珠光版BROWN大地色等5色</a>
+                    <a href="#">￥132.0</a>
+                </div>
+                <div class="show_boutique">
+                    <img src="img/best_2.jpg"/>
+                    <a href="#">韩国3ce三熹玉三色眼影黑壳珠光版BROWN大地色等5色</a>
+                    <a href="#">￥132.0</a>
+                </div>
+                <div class="show_boutique">
+                    <img src="img/best_3.jpg"/>
+                    <a href="#">韩国3ce三熹玉三色眼影黑壳珠光版BROWN大地色等5色</a>
+                    <a href="#">￥132.0</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+
+
+<footer>
+    <div class="footer">
+        <div class="footer_box">
+            <div class="uls_box">
+                <ul>
+                    <li><a href="#">购物指南</a></li>
+                    <li><a href="#">新手指南</a></li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">正品保障</a></li>
+                    <li><a href="#">手机商场</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">配送方式</a></li>
+                    <li><a href="#">运费说明</a></li>
+                    <li><a href="#">配送方式</a></li>
+                    <li><a href="#">物流查询</a></li>
+                    <li><a href="#">验货签收</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">支付方式</a></li>
+                    <li><a href="#">支付方式</a></li>
+                    <li><a href="#">红包支付</a></li>
+                    <li><a href="#">余额支付</a></li>
+                    <li><a href="#">在线支付</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">售后支付</a></li>
+                    <li><a href="#">退换货服务</a></li>
+                    <li><a href="#">退货流畅</a></li>
+                    <li><a href="#">退货说明</a></li>
+                    <li><a href="#">发票规则</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">服务保障</a></li>
+                    <li><a href="#">会员级别</a></li>
+                    <li><a href="#">正品保障</a></li>
+                    <li><a href="#">消费者告知书</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="footer_wx">
+                <p>微信关注我们</p>
+                <img src="img/qrcode.png">
+                <p>微信扫一扫</p>
+            </div>
+            <p class="footer_center">© 2005-2019 3CE官网 版权所有，并保留所有权利。 上海市浦东新区富特北路460号 上海自贸区进口商品直销中心 E-mail: 1963006006@qq.com <a href="#">沪ICP备14019473号</a></p>
+            <div class="uls_bottom">
+                <ul>
+                    <li><a href="#">免责条款</a></li>
+                    <li>|</li>
+                    <li><a href="#">隐私保护</a></li>
+                    <li>|</li>
+                    <li><a href="#">咨询热线</a></li>
+                    <li>|</li>
+                    <li><a href="#">联系我们</a></li>
+                    <li>|</li>
+                    <li><a href="#">公司简介</a></li>
+                    <li>|</li>
+                    <li><a href="#">批发方案</a></li>
+                    <li>|</li>
+                    <li><a href="#">配送方式</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--侧边栏-->
+
+<aside>
+    <div class="aside">
+        <div class="aside_box">
+            <ul class="aside_uls">
+                <li class="aside_li_one">
+                    <a href="#">
+                        <i></i>
+                    </a>
+                    <div class="lis_man">
+                        <img src="img/people.gif"/>
+                        <p>
+                            您好，请&nbsp;&nbsp;
+                            <a href="#">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="#">注册</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="aside_li_two">
+                    <a href="#">
+                        <i></i>
+                        购物车
+                        <span>0</span>
+                    </a>
+                </li>
+                <li class="aside_li_three aside_one_1">
+                    <a href="#">
+
+                    </a>
+                    <div class="hisory_box">
+                        <p>浏览历史</p>
+                    </div>
+                </li>
+                <li class="aside_li_three aside_ticket">
+                    <a href="#">
+
+                    </a>
+                    <div class="hisory_box">
+                        <p>领优惠券</p>
+                    </div>
+                </li>
+                <li class="aside_li_three aside_collect">
+                    <a href="#">
+
+                    </a>
+                    <div class="hisory_box">
+                        <p>我的收藏</p>
+                    </div>
+                </li>
+                <li class="aside_li_three aside_money">
+                    <a href="#">
+
+                    </a>
+                    <div class="hisory_box">
+                        <p>我的资产</p>
+                    </div>
+                </li>
+                <li class="aside_li_three aside_service">
+                    <a class="service_a_1" href="#">
+
+                    </a>
+                    <div class="service_qq">
+                        <a href="#">
+                            <i></i>
+                            联系QQ客服
+                        </a>
+                    </div>
+                </li>
+                <li class="aside_li_three aside_wx">
+
+                    <a href="#">
+
+                    </a>
+                    <div class="imgs_wx">
+                        <img src="img/qrcode.png"/>
+                    </div>
+                </li>
+                <li id="go_top" class="aside_li_three aside_goback_top" onclick="gonTop">
+                    <a href="#goback_top">
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
 
 
 </body>
@@ -415,10 +776,46 @@
         }
 
 
+        $("#shopping_black").onclick=function () {
+            $("#bigBox").style.backgroundImage=getStyle($("#shopping_black"),"backgroundImage");
+            this.style.border="1px solid #ff7700";
+            $("#shopping_brown").style.border="1px solid #dcdcdc";
+        }
+        $("#shopping_brown").onclick=function () {
+            $("#bigBox").style.backgroundImage=getStyle($("#shopping_brown"),"backgroundImage");
+            this.style.border="1px solid #ff7700";
+            $("#shopping_black").style.border="1px solid #dcdcdc";
+        }
 
 
+        // var addShopping = $("#shopping_num").value;
+        // $("#addBtn").onclick=function () {
+        //     addShopping++;
+        // }
+        // $("#shopping_num").value=addShopping;
+
+    }
+    function jiahanshu(num) {
+        num++;
+        return num;
+    }
+    function jianhanshu(num) {
+        num--;
+        return num;
+    }
 
 
+    $("#addBtn").onclick=function(){
+        let num=$("#shopping_num").value;
+        $("#shopping_num").value = jiahanshu(num);
+    }
+    $("#radiusBtn").onclick=function(){
+        let num=$("#shopping_num").value;
+        $("#shopping_num").value = jianhanshu(num);
+    }
+
+    $("#shopping_collect").onclick=function () {
+        alert("恭喜您已成功加入购物车！")
     }
 
 
